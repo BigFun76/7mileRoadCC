@@ -1,0 +1,43 @@
+#mainNav
+  width: 100vh
+  ul
+    position: fixed
+    width: 95vw
+    height: 30px
+    background-color: none
+    display: flex
+
+    @media only screen and (max-width: 375px)
+      height: 20px
+
+    li
+      display: block
+      list-style: none
+      padding-right: 0px
+    li:first-child
+      margin-right: auto
+
+      @media only screen and (max-width: 414px)
+        margin-left: -30px
+
+      @media only screen and (max-width: 375px)
+        margin-left: -20px
+    a
+      color: #a8a8a8
+      font-size: 1.5em
+      font-weight: bolder
+      display: block
+      background-color: none
+      border-radius: 4px
+      padding: 0px 0px
+
+      @media only screen and (max-width: 414px)
+        font-size: 1em
+          /*padding: 0px 20px 0px 0px*/
+
+      @media only screen and (max-width: 375px)
+        font-size: 1em
+          /*padding: 0px 10px 0px 0px*/
+
+    a:hover
+      color: #cb5041
